@@ -14,17 +14,31 @@
 
     .pregunta-header {
       padding-bottom: 20px;
+      font-size: $header-3;
+      color: $primary-600;
     }
 
     .pregunta-row {
       display: grid;
       gap: 20px;
       grid-template-columns: 70% auto;
+      color: $neutral-900;
       
-      /* .contesta-wrapper {
-        display: flex;
-        align-items: center;
-      } */
+      .pregunta-body-wrapper {
+        font-size: $general;
+      }
+      
+      input[type="checkbox"] {
+        width: 100px;
+      }
+      
+      .checkbox-label {
+        font-size: $header-2;
+      }
+    }
+    
+    .button-wrapper {
+      padding-top: 40px;
     }
   }
 }

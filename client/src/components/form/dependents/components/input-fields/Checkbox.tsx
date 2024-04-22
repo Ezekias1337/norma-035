@@ -36,7 +36,7 @@ export const Checkbox: FC<InputFieldProps> = ({
   };
 
   return (
-    <div className={`checkbox-wrapper`} key={name}>
+    <div className={`checkbox-wrapper display-flex`} key={name}>
       <input
         type="checkbox"
         id={kebabCasifyString(name)}
