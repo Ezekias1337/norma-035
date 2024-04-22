@@ -8,6 +8,7 @@ import AboutUs from "./pages/AboutUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import UnderConstruction from "./pages/UnderConstruction";
+import TomarExamen from "./pages/TomarExamen";
 // Admin Pages
 import Login from "./pages/Login";
 //404 Page
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/contact-us" element={<ContactUs />}></Route>
         <Route path="/website-submitted" element={<WebsiteSubmitted />}></Route>
         <Route path="/about-us" element={<AboutUs />}></Route>
+        <Route path="/tomar-examen" element={<TomarExamen />}></Route>
 
         {/*<Route path="/practice-areas" element={<PracticeAreas />}></Route>
         <Route path="/client-reviews" element={<ClientReviews />}></Route>

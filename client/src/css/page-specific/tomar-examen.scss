@@ -1,0 +1,30 @@
+@import "../../css/variables";
+
+.tomar-examen {
+  background-color: $neutral-100;
+
+  h1.page-title {
+    color: $primary-500;
+  }
+
+  div.examen-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 80px;
+
+    .pregunta-header {
+      padding-bottom: 20px;
+    }
+
+    .pregunta-row {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 70% auto;
+      
+      /* .contesta-wrapper {
+        display: flex;
+        align-items: center;
+      } */
+    }
+  }
+}

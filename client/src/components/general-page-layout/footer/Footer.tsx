@@ -1,11 +1,5 @@
 // Library Imports
-import {
-  faInstagram,
-  faFacebook,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
 // Components
-import { FooterSocialIcon } from "./dependents/FooterSocialIcon";
 import { FooterLink } from "./dependents/FooterLink";
 // CSS
 import "./footer.scss";
@@ -22,34 +16,22 @@ const Footer = () => {
             <img src={logo} alt="Logo" className="footer-logo" />
           </Link>
         </div>
-
-        <div className="social-col">
-          <FooterSocialIcon
-            icon={faInstagram}
-            url="https://www.instagram.com/weblordshub?igsh=MzRlODBiNWFlZA=="
-          />
-          <FooterSocialIcon icon={faFacebook} url="https://www.facebook.com/profile.php?id=61558349652239&mibextid=ZbWKwL" />
-          <FooterSocialIcon
-            icon={faXTwitter}
-            url="https://twitter.com/WebLordsHub"
-          />
-        </div>
       </div>
       <div className="footer-navigation display-flex justify-content-space-around">
         <div className="footer-navigation-column">
           <h5 className="footer-navigation-header bold-text full-flex">
-            Contact
+            Contacto
           </h5>
 
           <div className="footer-link-column display-flex">
             <FooterLink
-              linkText="(864) 666-9727"
-              url="tel:+18646669727"
+              linkText="(664) 231-3450"
+              url="tel:+526642313450"
               openInNewTab={false}
             />
             <FooterLink
-              linkText="Email"
-              url="mailto: overlord@weblordshub.com"
+              linkText="Correo"
+              url="mailto: 123@placeholder.com"
               openInNewTab={false}
             />
           </div>
@@ -72,7 +54,7 @@ const Footer = () => {
         </div>
         <div className="footer-navigation-column">
           <h5 className="footer-navigation-header bold-text full-flex">
-            Other
+            Otro
           </h5>
 
           <div className="footer-link-column display-flex">
@@ -91,7 +73,9 @@ const Footer = () => {
       </div>
       <div className="footer-copywrite-disclaimer-wrapper align-items-center display-flex justify-content-space-between">
         <div className="copywrite-container display-flex">
-          <small className="copywrite-disclaimer">© 2024 by WebLord LLC</small>
+          <small className="copywrite-disclaimer">
+            © 2024 Fisher & Paykel | Created by Code Decoded
+          </small>
         </div>
 
         <div className="footer-bottom-navigation-wrapper display-flex justify-content-right">

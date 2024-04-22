@@ -155,6 +155,7 @@ body {
 
 .button-wrapper {
   @extend .full-flex;
+  gap: 20px;
 }
 
 .bold-text {

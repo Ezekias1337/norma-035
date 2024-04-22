@@ -33,13 +33,10 @@ const Navbar: React.FC = () => {
       <div className={`navbar-menu${isOpen ? " navbar-menu-open" : ""}`}>
         <ul className="space-around-flex align-items-center">
           <li>
-            <AnimatedNavLink linkText="Home" url="/" />
+            <AnimatedNavLink linkText="Página Principal" url="/" />
           </li>
           <li>
-            <AnimatedNavLink linkText="About" url="/about-us" />
-          </li>
-          <li>
-            <AnimatedNavLink linkText="Contact Us" url="/contact-us" />
+            <AnimatedNavLink linkText="Iniciar Sesión" url="/login" />
           </li>
         </ul>
       </div>
