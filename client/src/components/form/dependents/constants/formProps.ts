@@ -116,6 +116,10 @@ export interface DropdownFieldProps extends InputFieldProps {
   dropdownOptions: string[];
 }
 
+export interface SwitchFieldProps extends InputFieldProps {
+  secondaryLabel?: string;
+}
+
 export interface CreditCardFieldProps extends InputFieldProps {
   //creditCardNumber?: string;
 }

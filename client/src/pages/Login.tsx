@@ -69,7 +69,7 @@ const Login = () => {
       <NavBar />
 
       <div className="login-wrapper padding-bottom-80">
-        <PageHeader title="Login" />
+        <PageHeader title="Iniciar Sesión" />
         <Form
           inputFields={arrayOfInputFields}
           apiEndpoint="/api/users/login"

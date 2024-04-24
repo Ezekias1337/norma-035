@@ -6,11 +6,12 @@ import { camelCasifyString } from "../../../../../../../shared/utils/strings/cam
 import { kebabCasifyString } from "../../../../../../../shared/utils/strings/kebabCasifyString";
 // Interfaces and Types
 import { FormUpdateEvent } from "../../constants/formTypes";
-import { InputFieldProps } from "../../constants/formProps";
+import { SwitchFieldProps } from "../../constants/formProps";
 
-export const SwitchInput: FC<InputFieldProps> = ({
+export const SwitchInput: FC<SwitchFieldProps> = ({
   name,
   label,
+  secondaryLabel = "",
   additionalClassNames = "",
   defaultValue = false,
   setStateHook,
@@ -45,6 +46,15 @@ export const SwitchInput: FC<InputFieldProps> = ({
       <label htmlFor={kebabCasifyString(name)} className={`switch-label`}>
         {label}
       </label>
+      <label
+        htmlFor={kebabCasifyString(name)}
+        className="switch-slider"
+      ></label>
+      {secondaryLabel !== "" && (
+        <label htmlFor={kebabCasifyString(name)} className={`switch-label`}>
+          {secondaryLabel}
+        </label>
+      )}
     </div>
   );
 };

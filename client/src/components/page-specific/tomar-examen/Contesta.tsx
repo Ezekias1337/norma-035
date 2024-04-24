@@ -4,6 +4,7 @@ import { useState, Fragment } from "react";
 import { SetStateHookForm } from "../../../components/form/dependents/constants/formProps";
 // Components
 import { Checkbox } from "../../form/dependents/components/input-fields/Checkbox";
+import { SwitchInput } from "../../form/dependents/components/input-fields/SwitchInput";
 
 const Contesta = ({
   headerText,
@@ -20,21 +21,13 @@ const Contesta = ({
 
   return (
     <Fragment>
-      <Checkbox
-        name={headerText}
-        label="Sí"
-        defaultValue="false"
-        required
-        setStateHook={setStateHook}
-        setErrorHook={setErrorHook}
-      />
-      <Checkbox
-        name={headerText}
+      <SwitchInput
+        name="yes"
         label="No"
-        defaultValue="false"
-        required
+        secondaryLabel="Sí"
         setStateHook={setStateHook}
         setErrorHook={setErrorHook}
+        required
       />
     </Fragment>
   );

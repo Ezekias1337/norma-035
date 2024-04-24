@@ -33,6 +33,8 @@ const Pregunta = ({
             />
 
             <br />
+            <br />
+            <br />
           </div>
         ))}
       </div>

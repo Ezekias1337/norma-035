@@ -190,6 +190,52 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   z-index: 1;
 }
 
+/* Switch Input */
+
+div.switch-wrapper {
+  input {
+    display: none;
+  }
+  
+  .switch-label:first-of-type {
+    padding-right: 10px;
+  }
+  
+  .switch-label:nth-of-type(n-1) {
+    padding-left: 10px;
+  }
+
+  input:checked ~ .switch-slider {
+    background: $primary-500;
+  }
+
+  input:checked ~ .switch-slider::after {
+    transform: translateX(30px);
+    background: #ffffff;
+  }
+
+  .switch-slider {
+    display: block;
+    width: 50px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 15px;
+    border: 2px solid $primary-500;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .switch-slider::after {
+    content: "";
+    display: inherit;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+    background: $primary-500;
+    transition: 0.3s;
+  }
+}
+
 /* 
   Country Code and Phone Number Input
 */
