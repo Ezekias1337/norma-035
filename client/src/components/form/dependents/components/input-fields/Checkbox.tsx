@@ -8,7 +8,6 @@ import { kebabCasifyString } from "../../../../../../../shared/utils/strings/keb
 import { FormUpdateEvent } from "../../constants/formTypes";
 import {
   InputFieldProps,
-  //InputFieldPropsState,
 } from "../../constants/formProps";
 
 export const Checkbox: FC<InputFieldProps> = ({

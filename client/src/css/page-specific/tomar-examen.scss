@@ -12,6 +12,12 @@
     padding-right: 40px;
     padding-bottom: 80px;
 
+    div.examen-headers-wrapper {
+      grid-template-columns: 70% auto;
+      color: $primary-700;
+      padding-bottom: 20px;
+    }
+
     .pregunta-header {
       padding-bottom: 20px;
       font-size: $header-3;
@@ -20,23 +26,26 @@
 
     .pregunta-row {
       display: grid;
-      gap: 20px;
-      grid-template-columns: 70% auto;
+      gap: 40px;
+      grid-template-columns: 70% 1fr 1fr;
       color: $neutral-900;
-      
-      .pregunta-body-wrapper {
-        font-size: $general;
-      }
-      
+      font-size: $general;
+
       input[type="checkbox"] {
-        width: 100px;
+        width: 25px;
+        height: 25px;
       }
-      
-      .checkbox-label {
-        font-size: $header-2;
+
+      .checkbox-wrapper {
+        align-items: center;
+        justify-content: center;
+
+        .checkbox-label {
+          font-size: $general;
+        }
       }
     }
-    
+
     .button-wrapper {
       padding-top: 40px;
     }

@@ -9,18 +9,24 @@ import { Button } from "../../button/Button";
 const Examen = () => {
   const [formInputData, setFormInputData] = useState<FormState>({});
   const [formErrorData, setFormErrorData] = useState<FormState>({});
+  
+  const [firstQuestionAnswers, setFirstQuestionAnswers] = useState<FormState>({});
+  const [secondQuestionAnswers, setSecondQuestionAnswers] = useState<FormState>({});
+  const [thirdQuestionAnswers, setThirdQuestionAnswers] = useState<FormState>({});
+  const [fourthQuestionAnswers, setFourthQuestionAnswers] = useState<FormState>({});
+  
   /* const [submissionSuccessful, setSubmissionSuccessful] =
     useState<boolean>(false);
   const [submissionInProgress, setSubmissionInProgress] =
     useState<boolean>(false); */
 
-  useEffect(() => {
-    console.log(formInputData);
-    console.log(formErrorData);
-  }, [formInputData, formErrorData]);
-
   return (
     <div className="examen-wrapper">
+      <div className="examen-headers-wrapper display-grid">
+        <h2 className="examen-header text-align-center">Pregunta</h2>
+        <h2 className="examen-header text-align-center">Contesta</h2>
+      </div>
+      
       <Pregunta
         headerText="1.- Acontecimiento traumático severo"
         setStateHook={setFormInputData}
