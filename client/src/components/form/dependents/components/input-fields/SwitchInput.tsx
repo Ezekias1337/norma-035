@@ -1,11 +1,11 @@
 // Library Imports
 import React, { FC, useEffect, useState } from "react";
 // Functions, Helpers, Utils and Hooks
-import { handleFormChange } from "../../functions/handleFormChange";
+import { handleSwitchChange } from "../../functions/handleFormChange";
 import { camelCasifyString } from "../../../../../../../shared/utils/strings/camelCasifyString";
 import { kebabCasifyString } from "../../../../../../../shared/utils/strings/kebabCasifyString";
 // Interfaces and Types
-import { FormUpdateEvent } from "../../constants/formTypes";
+import { SwitchUpdateEvent } from "../../constants/formTypes";
 import { SwitchFieldProps } from "../../constants/formProps";
 
 export const SwitchInput: FC<SwitchFieldProps> = ({
@@ -16,8 +16,8 @@ export const SwitchInput: FC<SwitchFieldProps> = ({
   defaultValue = false,
   setStateHook,
   setErrorHook,
-  handleInputChange = (e: FormUpdateEvent) => {
-    handleFormChange(e, setStateHook, setErrorHook);
+  handleInputChange = (e: SwitchUpdateEvent) => {
+    handleSwitchChange(e, setStateHook, setErrorHook);
   },
 }) => {
   const [isChecked, setIsChecked] = useState<boolean>(false);

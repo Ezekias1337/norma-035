@@ -1,28 +1,23 @@
 // Library Imports
-import { useState, Fragment } from "react";
+import { Fragment } from "react";
 // Interfaces and Types
 import { SetStateHookForm } from "../../../components/form/dependents/constants/formProps";
 // Components
-import { Checkbox } from "../../form/dependents/components/input-fields/Checkbox";
 import { SwitchInput } from "../../form/dependents/components/input-fields/SwitchInput";
 
 const Contesta = ({
-  headerText,
-  bodyText,
+  stateName,
   setStateHook,
   setErrorHook,
 }: {
-  headerText: string;
-  bodyText: string[];
+  stateName: string;
   setStateHook: SetStateHookForm;
   setErrorHook: SetStateHookForm;
 }) => {
-  const [checkedBoxId, setCheckedBoxId] = useState<number>(0);
-
   return (
     <Fragment>
       <SwitchInput
-        name="yes"
+        name={stateName}
         label="No"
         secondaryLabel="Sí"
         setStateHook={setStateHook}
