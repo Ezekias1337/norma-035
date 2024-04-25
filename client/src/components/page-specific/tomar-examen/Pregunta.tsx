@@ -1,10 +1,14 @@
 // Library Imports
-import { Fragment } from "react";
+//import { Fragment } from "react";
 // Interfaces and Types
 import { SetStateHookForm } from "../../../components/form/dependents/constants/formProps";
 // Components
-import { Checkbox } from "../../form/dependents/components/input-fields/Checkbox";
 import Contesta from "./Contesta";
+
+export interface bodyTextProp {
+  stateName: string;
+  textToDisplay: string;
+}
 
 const Pregunta = ({
   headerText,
@@ -13,7 +17,7 @@ const Pregunta = ({
   setErrorHook,
 }: {
   headerText: string;
-  bodyText: string[];
+  bodyText: bodyTextProp[];
   setStateHook: SetStateHookForm;
   setErrorHook: SetStateHookForm;
 }) => {
@@ -24,14 +28,12 @@ const Pregunta = ({
       <div className="pregunta-container">
         {bodyText.map((line, index) => (
           <div className="pregunta-row" key={index}>
-            <h4>{line}</h4>
+            <h4>{line.textToDisplay}</h4>
             <Contesta
-              headerText="Si"
-              bodyText={["Sí"]}
+              stateName={line.stateName}
               setStateHook={setStateHook}
               setErrorHook={setErrorHook}
             />
-
             <br />
             <br />
             <br />
