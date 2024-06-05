@@ -1,53 +1,61 @@
-$primary-100: #c0d1e1;
-$primary-200: #9eb4cc;
-$primary-300: #7b96b8;
-$primary-400: #5a7aa5;
-$primary-500: #396d92;
-$primary-600: #2d5773;
-$primary-700: #224155;
-$primary-800: #183036;
-$primary-900: #0d1c18;
+// theme.scss
 
-$success-100: #d4eddb;
-$success-200: #aad8b8;
-$success-300: #80c395;
-$success-400: #56ae72;
-$success-500: #2c9950;
-$success-600: #237d40;
-$success-700: #1a612f;
-$success-800: #10451f;
-$success-900: #08290f;
+// Primary Color Shades
+$primary-100: #D6E1F6;
+$primary-200: #ADC3EC;
+$primary-300: #84A5E2;
+$primary-400: #5B87D8;
+$primary-500: #4276CF;
+$primary-600: #365EA4;
+$primary-700: #294579;
+$primary-800: #1D2D4F;
+$primary-900: #101625;
 
-$warning-100: #fff3d1;
-$warning-200: #ffe2a3;
-$warning-300: #ffcf75;
-$warning-400: #ffbd47;
-$warning-500: #ffab19;
-$warning-600: #cc8914;
-$warning-700: #99670f;
-$warning-800: #663509;
-$warning-900: #332304;
+// Success Colors
+$success-100: #D6F6E4;
+$success-200: #ADF1C9;
+$success-300: #84EBAE;
+$success-400: #5BE593;
+$success-500: #32E078;
+$success-600: #29B860;
+$success-700: #208F48;
+$success-800: #166630;
+$success-900: #0D3D18;
 
-$error-100: #f7d9d8;
-$error-200: #e8a8a7;
-$error-300: #da7776;
-$error-400: #cb4646;
-$error-500: #bc1515;
-$error-600: #932020;
-$error-700: #6b191b;
-$error-800: #441314;
-$error-900: #1c0b0f;
+// Warning Colors
+$warning-100: #FFF6D6;
+$warning-200: #FFEDAD;
+$warning-300: #FFE384;
+$warning-400: #FFDA5B;
+$warning-500: #FFD132;
+$warning-600: #CCAA29;
+$warning-700: #998320;
+$warning-800: #665C16;
+$warning-900: #33250D;
 
-$info-100: #d1deee;
-$info-200: #a3bde3;
-$info-300: #759cd8;
-$info-400: #477bcf;
-$info-500: #195ac5;
-$info-600: #144a9a;
-$info-700: #0f3a6f;
-$info-800: #092a44;
-$info-900: #041a19;
+// Error Colors
+$error-100: #F6D6D6;
+$error-200: #ECADAD;
+$error-300: #E28484;
+$error-400: #D85B5B;
+$error-500: #CF3232;
+$error-600: #A42A2A;
+$error-700: #792122;
+$error-800: #4F1919;
+$error-900: #251010;
 
+// Info Colors
+$info-100: #D6E6F6;
+$info-200: #ADCDEB;
+$info-300: #84B3E0;
+$info-400: #5B9AD5;
+$info-500: #3280CA;
+$info-600: #2968A3;
+$info-700: #204F7B;
+$info-800: #163754;
+$info-900: #0D1E2D;
+
+// Neutral Colors
 $neutral-100: #fcfcfd;
 $neutral-200: #d0d3d7;
 $neutral-300: #a7acb4;
@@ -58,6 +66,7 @@ $neutral-700: #141e31;
 $neutral-800: #040a15;
 $neutral-900: #000103;
 
+// Transparent Black
 $transparent-black-100: rgba($neutral-900, 0.1);
 $transparent-black-200: rgba($neutral-900, 0.2);
 $transparent-black-300: rgba($neutral-900, 0.3);
@@ -68,10 +77,12 @@ $transparent-black-700: rgba($neutral-900, 0.7);
 $transparent-black-800: rgba($neutral-900, 0.8);
 $transparent-black-900: rgba($neutral-900, 0.9);
 
-$header-1: 56.8px;
-$header-2: 42.6px;
-$header-3: 32px;
+// Font Sizes
+$header1: 56.8px;
+$header2: 42.6px;
+$header3: 32px;
 $general: 24px;
 $body: 18px;
 
+// Border Radius
 $border-radius: 5px;
